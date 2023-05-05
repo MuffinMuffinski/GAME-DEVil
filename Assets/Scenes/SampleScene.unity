@@ -168,7 +168,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -289,8 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSONAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
   canvas: {fileID: 1908123726}
-  textPrefab: {fileID: 11456674, guid: 1aab6ef84d87c416f8f0b3e1ef3d77d2, type: 3}
-  buttonPrefab: {fileID: 11455116, guid: 37c108a6c38964f79a6621eccb33ddc1, type: 3}
+  textPrefab: {fileID: 11456674, guid: 542ef7b3d4694294da0753011c40a23c, type: 3}
+  buttonPrefab: {fileID: 11455116, guid: 57964940a1c9fd048bc5b03a33f3e4dc, type: 3}
 --- !u!223 &1908123726
 Canvas:
   m_ObjectHideFlags: 0
@@ -446,8 +446,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSONAsset: {fileID: 4900000, guid: bac3bfbee93593c47987c1c9b8f9af21, type: 3}
   canvas: {fileID: 1908123726}
-  textPrefab: {fileID: 11456674, guid: 1aab6ef84d87c416f8f0b3e1ef3d77d2, type: 3}
-  buttonPrefab: {fileID: 11455116, guid: 37c108a6c38964f79a6621eccb33ddc1, type: 3}
+  textPrefab: {fileID: 11456674, guid: 542ef7b3d4694294da0753011c40a23c, type: 3}
+  buttonPrefab: {fileID: 11455116, guid: 57964940a1c9fd048bc5b03a33f3e4dc, type: 3}
 --- !u!4 &2009679605
 Transform:
   m_ObjectHideFlags: 0
