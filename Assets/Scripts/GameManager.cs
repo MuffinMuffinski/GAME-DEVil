@@ -1,16 +1,17 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private TMP_Text timerLabel;
-    [SerializeField] private List<InteractableItem> itemList;
+    [SerializeField] private int ReputationPoints = 0;
+
+    [SerializeField] private List<GameObject> endPanelsEmails;
 
     private float targetTime = 31f;
     public bool isPaused;
+    public bool secretEndingUnlocked { get; set; }
     
     public static GameManager Instance { get; private set; }
     private void Awake()
@@ -45,9 +46,25 @@ public class GameManager : MonoBehaviour
     {
         isPaused = true;
         
-        //TODO end game
-    }
+        if (ReputationPoints < 5)
+        {
+            //Bad ending
+            endPanelsEmails[0].gameObject.SetActive(true);
+        }
 
+        if (ReputationPoints >= 5)
+        {
+            //Good ending
+            endPanelsEmails[1].gameObject.SetActive(true);
+        }
+
+        if (ReputationPoints >= 5 && secretEndingUnlocked)
+        {
+            //Secret ending
+            endPanelsEmails[2].gameObject.SetActive(true);
+        }
+    }
+    
     private void OnDestroy()
     {
         if (Instance == this)
@@ -61,14 +78,23 @@ public class GameManager : MonoBehaviour
     {
         //Pause timer
         isPaused = true;
-
-        //Play corresponding dialogue > safe item as already clicked?
-        //DialoguePanel.gameObject.SetActive(true);
+        
+        //TODO stop input
     }
     
     public void ContinueTimer()
     {
         //Pause timer
         isPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        //TODO 
+    }
+
+    public void ExitGame()
+    {
+        
     }
 }
