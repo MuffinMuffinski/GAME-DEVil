@@ -6,10 +6,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text timerLabel;
     [SerializeField] private int ReputationPoints = 0;
-
+	[SerializeField] private TMP_Text pointsLabel;
     [SerializeField] private List<GameObject> endPanelsEmails;
 
     private float targetTime = 31f;
+    private int points;
     public bool isPaused;
     public bool secretEndingUnlocked { get; set; }
     
@@ -88,6 +89,10 @@ public class GameManager : MonoBehaviour
         isPaused = false;
     }
 
+    public void AddPoints(int point)
+    {
+        points += point;
+        pointsLabel.text = points.ToString();
     public void RestartGame()
     {
         //TODO 
