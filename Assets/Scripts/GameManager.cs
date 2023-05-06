@@ -7,9 +7,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private TMP_Text timerLabel;
+    [SerializeField] private TMP_Text pointsLabel;
     [SerializeField] private List<InteractableItem> itemList;
 
     private float targetTime = 31f;
+    private int points;
     public bool isPaused;
     
     public static GameManager Instance { get; private set; }
@@ -70,5 +72,11 @@ public class GameManager : MonoBehaviour
     {
         //Pause timer
         isPaused = false;
+    }
+
+    public void AddPoints(int point)
+    {
+        points += point;
+        pointsLabel.text = points.ToString();
     }
 }
