@@ -65,9 +65,11 @@ public class BasicInkExample : MonoBehaviour {
 
 	// Creates a textbox showing the the line of text
 	void CreateContentView (string text) {
-		Text storyText = Instantiate (textPrefab) as Text;
-		storyText.text = text;
-		storyText.transform.SetParent (canvas.transform, false);
+		//Text storyText = Instantiate (textPrefab) as Text;
+		//storyText.text = text;
+		//storyText.transform.SetParent (canvas.transform, false);
+		TextAnim.Instance.dialogText.Add(text);
+		TextAnim.Instance.EndTypingCheck();
 	}
 
 	// Creates a button showing the choice text
