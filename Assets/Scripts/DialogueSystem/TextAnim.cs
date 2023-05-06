@@ -65,7 +65,7 @@ public class TextAnim : MonoBehaviour
             }
             
             counter += 1;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.03f);
         }
     }
 
