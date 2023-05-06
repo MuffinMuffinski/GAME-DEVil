@@ -274,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerLabel: {fileID: 1010670439}
   ReputationPoints: 0
-  pointsLabel: {fileID: 0}
+  pointsLabel: {fileID: 1767750589}
   endPanelsEmails:
   - {fileID: 689155056}
   - {fileID: 1203146828}

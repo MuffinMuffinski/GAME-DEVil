@@ -58,6 +58,11 @@ public class BasicInkExample : MonoBehaviour {
 			text = text.Trim();
 			// Display the text on screen!
 			CreateContentView(text);
+			story.ObserveVariable("points", (variableName, newValue) =>
+			{
+				// Print the new value
+				//Debug.Log(newValue);
+			});
 		}
 
 		// Display all the choices, if there are any!
@@ -80,6 +85,10 @@ public class BasicInkExample : MonoBehaviour {
 				RemoveChildren();
 				TextAnim.Instance.ClearTyper();
 				GameManager.Instance.ContinueTimer();
+				
+				var points = story.variablesState["points"];
+				Debug.Log("points " + points);
+				GameManager.Instance.AddPoints((int)points);
 			});
 		}
 	}
