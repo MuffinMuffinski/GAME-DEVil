@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private float targetTime = 31f;
     private float points;
     public bool isPaused;
-    public bool secretEndingUnlocked { get; set; }
+    public bool secretEndingUnlocked;
     
     public static GameManager Instance { get; private set; }
     private void Awake()
