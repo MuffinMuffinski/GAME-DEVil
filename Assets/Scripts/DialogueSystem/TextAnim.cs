@@ -60,6 +60,7 @@ public class TextAnim : MonoBehaviour
 
             if (visibleCount >= totalCharCount)
             {
+                yield return new WaitForSeconds(1f);
                 break;
             }
             
