@@ -18,6 +18,8 @@ public class InteractableItem : MonoBehaviour
 
     public void OnMouseOver()
     {
+        if(GameManager.Instance.isPaused) return;
+        
         textFieldItem.text = itemName;
         
         //highlight
@@ -32,6 +34,8 @@ public class InteractableItem : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if(GameManager.Instance.isPaused) return;
+        
         GameManager.Instance.OnItemClick();
         BasicInkExample.Instance.inkJSONAsset = inkDialogue;
         BasicInkExample.Instance.StartStory();
