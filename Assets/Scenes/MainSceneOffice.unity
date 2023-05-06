@@ -792,12 +792,16 @@ PrefabInstance:
       value: Dirty Coffee Mug
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: inkDialogue
+      value: 
+      objectReference: {fileID: 4900000, guid: fd26b05043241764f86dc897a46823d6, type: 3}
+    - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: textFieldItem
       value: 
       objectReference: {fileID: 1602625428}
     - target: {fileID: 6024660284156341353, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_Name
-      value: InteractableItemNew (1)
+      value: Mug
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_RootOrder
@@ -1485,12 +1489,16 @@ PrefabInstance:
       value: Family Photo
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: inkDialogue
+      value: 
+      objectReference: {fileID: 4900000, guid: 15877c17d917ab341a6b673be10a7745, type: 3}
+    - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: textFieldItem
       value: 
       objectReference: {fileID: 1602625428}
     - target: {fileID: 6024660284156341353, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_Name
-      value: InteractableItemNew
+      value: Photo
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_RootOrder
