@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Post Processing
-  - 
+  - Items
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2376566577
+    locked: 0
+  - name: Items
+    uniqueID: 2711070837
     locked: 0

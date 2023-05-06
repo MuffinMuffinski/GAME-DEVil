@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 
@@ -5,19 +6,31 @@ public class InteractableItem : MonoBehaviour
 {
     [SerializeField] private TextAsset inkDialogue;
     [SerializeField] private TextMeshProUGUI textFieldItem;
+    [SerializeField] private Material outlineMaterial;
     public string itemName;
 
-    public void OnStartHovering()
+    private Material defaultMaterial;
+
+    private void Awake()
+    {
+        defaultMaterial = GetComponent<SpriteRenderer>().material;
+    }
+
+    public void OnMouseOver()
     {
         textFieldItem.text = itemName;
+        
+        //highlight
+        GetComponent<SpriteRenderer>().material = outlineMaterial;
     }
 
-    public void OnStopHovering()
+    public void OnMouseExit()
     {
         textFieldItem.text = "";
+        GetComponent<SpriteRenderer>().material = defaultMaterial;
     }
 
-    public void OnClickOnItem()
+    public void OnMouseDown()
     {
         GameManager.Instance.OnItemClick();
         BasicInkExample.Instance.inkJSONAsset = inkDialogue;
