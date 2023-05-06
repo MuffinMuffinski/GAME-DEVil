@@ -9,6 +9,8 @@ public class InteractableItem : MonoBehaviour
     [SerializeField] private Material outlineMaterial;
     public string itemName;
 
+    private bool interacted;
+
     private Material defaultMaterial;
 
     private void Awake()
@@ -18,7 +20,7 @@ public class InteractableItem : MonoBehaviour
 
     public void OnMouseOver()
     {
-        if(GameManager.Instance.isPaused) return;
+        if(GameManager.Instance.isPaused || interacted) return;
         
         textFieldItem.text = itemName;
         
@@ -34,8 +36,9 @@ public class InteractableItem : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if(GameManager.Instance.isPaused) return;
-        
+        if(GameManager.Instance.isPaused || interacted) return;
+
+        interacted = true;
         GameManager.Instance.OnItemClick();
         BasicInkExample.Instance.inkJSONAsset = inkDialogue;
         BasicInkExample.Instance.StartStory();
