@@ -360,7 +360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &265899572
 PrefabInstance:
@@ -370,12 +370,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.93
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.04
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
@@ -528,7 +536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372285033
 GameObject:
@@ -600,7 +608,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452937783
 GameObject:
@@ -873,6 +881,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.77
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: Disgusting Stain on the Wall
@@ -951,6 +975,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: Dirty Coffee Mug
@@ -1137,7 +1189,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1220,6 +1272,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: University Diploma
@@ -1456,11 +1516,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.4
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.84
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
@@ -1546,12 +1606,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.92
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.08
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
@@ -1631,6 +1699,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.04
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: Tax Report
@@ -1807,12 +1883,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.95
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.97
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
@@ -1885,54 +1965,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
   m_PrefabInstance: {fileID: 1509527823}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1554450652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1554450653}
-  - component: {fileID: 1554450654}
-  m_Layer: 6
-  m_Name: PostProcessing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1554450653
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554450652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 351.4921, y: 136.39767, z: -19.003052}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1554450654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554450652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: a6a08e13e87497848b72a3378f652261, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1 &1602625426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,12 +2107,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 3.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.07
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.11
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
@@ -2160,6 +2200,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.74
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: Dead Mouse
@@ -2238,6 +2294,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.07
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: itemName
       value: Family Photo
@@ -2350,7 +2418,7 @@ Transform:
   - {fileID: 1509527824}
   - {fileID: 1097262021}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2022338163
 PrefabInstance:
@@ -2359,6 +2427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 2.06
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2.01
@@ -2445,6 +2517,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1864183865}
     m_Modifications:
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.x
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341348, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_Size.y
+      value: 0.81
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: textFieldItem
       value: 
