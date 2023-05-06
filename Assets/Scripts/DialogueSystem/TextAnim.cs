@@ -77,6 +77,7 @@ public class TextAnim : MonoBehaviour
     public void ClearTyper()
     {
         StopAllCoroutines();
+        coroutineQueue.Clear();
         textMeshPro.text = string.Empty;
     }
 }
