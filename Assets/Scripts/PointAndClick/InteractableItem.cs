@@ -1,9 +1,9 @@
-using System;
 using UnityEngine;
 using TMPro;
 
 public class InteractableItem : MonoBehaviour
 {
+    [SerializeField] private TextAsset inkDialogue;
     [SerializeField] private TextMeshProUGUI textFieldItem;
     public string itemName;
 
@@ -19,6 +19,8 @@ public class InteractableItem : MonoBehaviour
 
     public void OnClickOnItem()
     {
-        GameManager.Instance.OnItemClick(itemName);
+        GameManager.Instance.OnItemClick();
+        BasicInkExample.Instance.inkJSONAsset = inkDialogue;
+        BasicInkExample.Instance.StartStory();
     }
 }

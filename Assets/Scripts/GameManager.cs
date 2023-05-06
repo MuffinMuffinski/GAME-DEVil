@@ -27,15 +27,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        //Timer start and animation
-    }
 
-    public void OnItemClick(string itemName)
+    public void OnItemClick()
     {
         //Pause timer
         //Play corresponding dialogue > safe item as already clicked?
-        DialoguePanel.gameObject.SetActive(true);
+        //DialoguePanel.gameObject.SetActive(true);
     }
 }
