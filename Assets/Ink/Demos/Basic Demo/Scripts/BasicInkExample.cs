@@ -94,8 +94,7 @@ public class BasicInkExample : MonoBehaviour {
 		//Text storyText = Instantiate (textPrefab) as Text;
 		//storyText.text = text;
 		//storyText.transform.SetParent (canvas.transform, false);
-		TextAnim.Instance.dialogText.Add(text);
-		TextAnim.Instance.EndTypingCheck();
+		TextAnim.Instance.AddToTypeWriter(text);
 	}
 
 	// Creates a button showing the choice text

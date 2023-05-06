@@ -8,9 +8,7 @@ public class TextAnim : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMeshPro;
 
-    public List<string> dialogText = new List<string>();
-
-    private int i;
+    private readonly Queue<IEnumerator> coroutineQueue = new Queue<IEnumerator>();
     
     public static TextAnim Instance { get; private set; }
 
@@ -26,8 +24,30 @@ public class TextAnim : MonoBehaviour
         }
     }
     
-    private IEnumerator TypeWriterEffect()
+    private void AddToQueue(IEnumerator coroutine)
     {
+        coroutineQueue.Enqueue(coroutine);
+        if (coroutineQueue.Count == 1)
+            StartCoroutine(CoroutineCoordinator());
+    }
+ 
+    private IEnumerator CoroutineCoordinator()
+    {
+        while (true)
+        {
+            while (coroutineQueue.Count > 0)
+            {
+                yield return StartCoroutine(coroutineQueue.Peek());
+                coroutineQueue.Dequeue();
+            }
+            if (coroutineQueue.Count == 0)
+                yield break;
+        }
+    }
+    
+    private IEnumerator TypeWriterEffect(string newText)
+    {
+        textMeshPro.text = newText;
         textMeshPro.ForceMeshUpdate();
         
         var totalCharCount = textMeshPro.textInfo.characterCount;
@@ -40,8 +60,6 @@ public class TextAnim : MonoBehaviour
 
             if (visibleCount >= totalCharCount)
             {
-                i += 1;
-                //Invoke("EndTypingCheck", 0.3f);
                 break;
             }
             
@@ -50,18 +68,14 @@ public class TextAnim : MonoBehaviour
         }
     }
 
-    public void EndTypingCheck()
+    public void AddToTypeWriter(string newText)
     {
-        if (i <= dialogText.Count - 1)
-        {
-            textMeshPro.text = dialogText[i];
-            StartCoroutine(TypeWriterEffect());
-        }
+        AddToQueue(TypeWriterEffect(newText));
     }
 
     public void ClearTyper()
     {
-        StopCoroutine(TypeWriterEffect());
+        StopAllCoroutines();
         textMeshPro.text = string.Empty;
     }
 }
