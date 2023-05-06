@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text timerLabel;
     [SerializeField] private List<InteractableItem> itemList;
 
-    private float targetTime = 20f;
+    private float targetTime = 61f;
     private bool isPaused;
     
     public static GameManager Instance { get; private set; }

@@ -79,6 +79,7 @@ public class BasicInkExample : MonoBehaviour {
 				//StartStory();
 				RemoveChildren();
 				TextAnim.Instance.ClearTyper();
+				GameManager.Instance.ContinueTimer();
 			});
 		}
 	}
