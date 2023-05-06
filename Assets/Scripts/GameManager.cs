@@ -93,6 +93,8 @@ public class GameManager : MonoBehaviour
     {
         points += point;
         pointsLabel.text = points.ToString();
+    }
+
     public void RestartGame()
     {
         //TODO 
