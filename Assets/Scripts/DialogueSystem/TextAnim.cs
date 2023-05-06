@@ -46,7 +46,7 @@ public class TextAnim : MonoBehaviour
             }
             
             counter += 1;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
@@ -57,5 +57,11 @@ public class TextAnim : MonoBehaviour
             textMeshPro.text = dialogText[i];
             StartCoroutine(TypeWriterEffect());
         }
+    }
+
+    public void ClearTyper()
+    {
+        StopCoroutine(TypeWriterEffect());
+        textMeshPro.text = string.Empty;
     }
 }
