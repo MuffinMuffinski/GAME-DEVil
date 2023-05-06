@@ -8,9 +8,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int ReputationPoints = 0;
 	[SerializeField] private TMP_Text pointsLabel;
     [SerializeField] private List<GameObject> endPanelsEmails;
+    [SerializeField] private SpriteRenderer reputationBar;
+    [SerializeField] private List<Sprite> reputationFillers;
 
     private float targetTime = 31f;
-    private int points;
+    private float points;
     public bool isPaused;
     public bool secretEndingUnlocked { get; set; }
     
@@ -91,8 +93,19 @@ public class GameManager : MonoBehaviour
 
     public void AddPoints(int point)
     {
-        points += point;
+        if (point >= 3)
+        {
+            points++;
+        }
+        else if (point <= 1)
+        {
+            points--;
+        }
+
+        points = Mathf.Clamp(points, 0, 5);
         pointsLabel.text = points.ToString();
+
+        reputationBar.sprite = reputationFillers[(int)points];
     }
 
     public void RestartGame()
