@@ -48,7 +48,7 @@ public class BasicInkExample : MonoBehaviour {
 	// Continues over all the lines of text, then displays all the choices. If there are no choices, the story is finished!
 	void RefreshView () {
 		// Remove all the UI on screen
-		//RemoveChildren ();
+		RemoveChildren ();
 		
 		// Read all the content until we can't continue any more
 		while (story.canContinue) {
