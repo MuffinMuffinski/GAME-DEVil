@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class TextAnim : MonoBehaviour
 {
+    [SerializeField] private bool AutomaticallyPlay = false;
     [SerializeField] private TextMeshProUGUI textMeshPro;
 
     private readonly Queue<IEnumerator> coroutineQueue = new Queue<IEnumerator>();
@@ -23,7 +24,15 @@ public class TextAnim : MonoBehaviour
             Instance = this;
         }
     }
-    
+
+    private void Start()
+    {
+        if (AutomaticallyPlay)
+        {
+            AddToTypeWriter(textMeshPro.text);
+        }
+    }
+
     private void AddToQueue(IEnumerator coroutine)
     {
         coroutineQueue.Enqueue(coroutine);
