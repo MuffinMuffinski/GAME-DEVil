@@ -4,6 +4,7 @@ using TMPro;
 
 public class InteractableItem : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private TextAsset inkDialogue;
     [SerializeField] private TextMeshProUGUI textFieldItem;
     [SerializeField] private Material outlineMaterial;
@@ -39,6 +40,8 @@ public class InteractableItem : MonoBehaviour
         if(GameManager.Instance.isPaused || interacted) return;
 
         interacted = true;
+        audioSource.Play();
+        
         GameManager.Instance.OnItemClick();
         BasicInkExample.Instance.inkJSONAsset = inkDialogue;
         BasicInkExample.Instance.StartStory();
