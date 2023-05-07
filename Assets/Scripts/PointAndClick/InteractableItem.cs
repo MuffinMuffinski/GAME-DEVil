@@ -10,7 +10,7 @@ public class InteractableItem : MonoBehaviour
     [SerializeField] private Material outlineMaterial;
     public string itemName;
 
-    private bool interacted;
+    public bool interacted;
 
     private Material defaultMaterial;
 
@@ -38,6 +38,11 @@ public class InteractableItem : MonoBehaviour
     public void OnMouseDown()
     {
         if(GameManager.Instance.isPaused || interacted) return;
+        if (CompareTag("SecretItem"))
+        {
+            GameManager.Instance.secretEndingUnlocked = true;
+            
+        }
 
         interacted = true;
         audioSource.Play();
@@ -45,5 +50,10 @@ public class InteractableItem : MonoBehaviour
         GameManager.Instance.OnItemClick();
         BasicInkExample.Instance.inkJSONAsset = inkDialogue;
         BasicInkExample.Instance.StartStory();
+    }
+
+    public void UnlockSecretItem()
+    {
+        interacted = false;
     }
 }

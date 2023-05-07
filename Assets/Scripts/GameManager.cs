@@ -5,14 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text timerLabel;
-    [SerializeField] private int ReputationPoints = 0;
 	[SerializeField] private TMP_Text pointsLabel;
     [SerializeField] private List<GameObject> endPanelsEmails;
     [SerializeField] private SpriteRenderer reputationBar;
     [SerializeField] private List<Sprite> reputationFillers;
+    [SerializeField] private InteractableItem secretItem;
 
     private float targetTime = 31f;
-    private float points;
+    public float points;
     public bool isPaused;
     public bool secretEndingUnlocked;
     
@@ -49,19 +49,19 @@ public class GameManager : MonoBehaviour
     {
         isPaused = true;
         
-        if (ReputationPoints < 5)
+        if (points < 5)
         {
             //Bad ending
             endPanelsEmails[0].gameObject.SetActive(true);
         }
 
-        if (ReputationPoints >= 5)
+        if (points >= 5)
         {
             //Good ending
             endPanelsEmails[1].gameObject.SetActive(true);
         }
 
-        if (ReputationPoints >= 5 && secretEndingUnlocked)
+        if (points >= 5 && secretEndingUnlocked)
         {
             //Secret ending
             endPanelsEmails[2].gameObject.SetActive(true);
@@ -106,6 +106,11 @@ public class GameManager : MonoBehaviour
         pointsLabel.text = points.ToString();
 
         reputationBar.sprite = reputationFillers[(int)points];
+
+        if (points == 5)
+        {
+            secretItem.UnlockSecretItem();
+        }
     }
 
     public void RestartGame()

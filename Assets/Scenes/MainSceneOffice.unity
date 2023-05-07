@@ -274,7 +274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerLabel: {fileID: 1010670439}
-  ReputationPoints: 0
   pointsLabel: {fileID: 1767750589}
   endPanelsEmails:
   - {fileID: 689155056}
@@ -288,6 +287,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cbe1c69cd16aba940b1a173265227915, type: 3}
   - {fileID: 21300000, guid: ff4c27fe24e28c24d870c7f34ac1207a, type: 3}
   - {fileID: 21300000, guid: ec6a56555e6ef1a488a86a718489a1bf, type: 3}
+  secretItem: {fileID: 1074498239}
+  points: 0
   isPaused: 0
   secretEndingUnlocked: 0
 --- !u!114 &150042708
@@ -1952,6 +1953,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
   m_PrefabInstance: {fileID: 1047520118}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1074498239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+  m_PrefabInstance: {fileID: 1219769113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ade4091d4c14b4db28a807b33030b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1074797638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
@@ -2167,9 +2179,17 @@ PrefabInstance:
       value: Tax Report
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: interacted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: inkDialogue
       value: 
       objectReference: {fileID: 4900000, guid: cca7bb5d97a419244a1e59867eec2822, type: 3}
+    - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: isSecretItem
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341349, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: textFieldItem
       value: 
@@ -2181,6 +2201,10 @@ PrefabInstance:
     - target: {fileID: 6024660284156341353, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_Name
       value: TaxReport
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024660284156341353, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
+      propertyPath: m_TagString
+      value: SecretItem
       objectReference: {fileID: 0}
     - target: {fileID: 6024660284156341355, guid: 19d9ea7660632d04792a15b3c2aab123, type: 3}
       propertyPath: m_RootOrder
